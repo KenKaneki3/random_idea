@@ -66,6 +66,10 @@ flutter:
     - resource/img/gra.jpg
     - resource/img/light.jpg
     - resource/img/ice.jpg
+    - resource/img/candy.jpg
+    - resource/img/jelly.jpg
+    - resource/img/pie.jpg
+    - resource/img/blue.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

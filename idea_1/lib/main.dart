@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                 borderRadius: BorderRadius.circular(20),
                 image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: AssetImage('resource/img/gra.jpg')),
+                    image: AssetImage('resource/img/pie.jpg')),
               ),
               child: Container(
                 decoration: BoxDecoration(
@@ -127,7 +127,7 @@ class _HomePageState extends State<HomePage> {
                   gradient:
                       LinearGradient(
                         begin: Alignment.bottomRight, 
-                        stops: [0.4,0.7], colors: [
+                        stops: [0.2,0.7], colors: [
                     Colors.black.withOpacity(0.65),
                     Colors.black.withOpacity(0.2),
                   ]),
@@ -145,8 +145,96 @@ class _HomePageState extends State<HomePage> {
                   ),),
                 ),
               ),
-            ),
+            ), 
           ),
+          SizedBox(
+            height:10),
+            Container(
+              height: 150,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Stack(
+                      children: <Widget>[
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.blueGrey,
+                            borderRadius: BorderRadius.circular(20),
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('resource/img/jelly.jpg')
+                            )
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            gradient: LinearGradient(
+                              begin: Alignment.bottomRight,
+                              stops: [0.2,0.9],
+                              colors: [
+                                Colors.black.withOpacity(0.5),
+                                Colors.black.withOpacity(0.1),
+                              ]
+                            )
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.bottomLeft,
+                          child: Padding(
+                            padding: const EdgeInsets.all(15.0),
+                            child: Text(
+                              'Jelly n more...',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 17
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 20,),
+                  Expanded(
+                    child: Container(
+                      height: 150,
+                      child: Column(
+                        children: <Widget>[
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blueGrey,
+                                borderRadius: BorderRadius.circular(20),
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage('resource/img/candy.jpg')
+                                )
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 20,),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.blueGrey,
+                                borderRadius: BorderRadius.circular(20),
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage('resource/img/blue.jpg'),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
         ],
       )),
     );
@@ -180,3 +268,8 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
+
+
+
